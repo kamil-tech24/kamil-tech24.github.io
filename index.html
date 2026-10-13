@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  Muhammad Kamil — Portfolio
+  Single-page static site: index.html + style.css + script.js
+  No frameworks, no build step. Ready for GitHub Pages.
+
+  HOW TO EDIT
+  - Search this file for "PLACEHOLDER" to find every piece of
+    content you still need to replace with real material.
+  ============================================================
+-->
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Swap the "no-js" class for "js" as early as possible so the
+       reveal animations only hide content when JavaScript is running. -->
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
+  <title>Muhammad Kamil | GoHighLevel Expert, Automation & AI Agents</title>
+  <meta name="description" content="Muhammad Kamil is a GoHighLevel (GHL) expert with 4+ years building CRM systems, workflows, funnels, and conversational and voice AI agents for agencies and business owners.">
+
+  <!-- Social sharing preview (Open Graph). Add og:image later if you have a banner image. -->
+  <meta property="og:title" content="Muhammad Kamil | GoHighLevel Expert, Automation & AI Agents">
+  <meta property="og:description" content="GHL setup, workflow automation, CRM migrations, and AI chat and voice agents built inside GoHighLevel.">
+  <meta property="og:type" content="website">
+
+  <!-- Simple "MK" favicon drawn as an inline SVG, so there's no extra file to manage -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='white'%3EMK%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Plus Jakarta Sans (UI) + JetBrains Mono (techy labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Keyboard users can jump straight past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ======================= HEADER / NAV ======================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Muhammad Kamil, back to top">
+        <span class="brand-mark" aria-hidden="true">MK</span>
+        <span class="brand-name">Muhammad Kamil</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Open menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="btn btn-primary btn-sm nav-cta" href="#contact">Hire me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= 1. HERO ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>GoHighLevel · Automation · AI Agents</p>
+
+          <h1 id="hero-title" class="reveal">
+            <span class="hero-name">Hi, I'm Muhammad Kamil.</span>
+            <span class="hero-headline">I build GoHighLevel systems that <span class="text-gradient">run themselves.</span></span>
+          </h1>
+
+          <p class="hero-tagline reveal">
+            GoHighLevel (GHL) expert for CRM setup, workflows, AI agents and integrations.
+            4+ years of hands-on fulfillment, from pipelines that stop leads slipping through
+            to conversational and voice AI agents that qualify leads and book calls for you.
+          </p>
+
+          <div class="hero-ctas reveal">
+            <a class="btn btn-primary" href="#featured">
+              View My Work
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <!-- Real credentials from the Upwork profile -->
+          <ul class="hero-badges reveal" aria-label="Highlights">
+            <li><span class="badge-dot badge-blue" aria-hidden="true"></span>100% Job Success</li>
+            <li><span class="badge-dot badge-green" aria-hidden="true"></span>Rising Talent on Upwork</li>
+            <li><span class="badge-dot badge-teal" aria-hidden="true"></span>4+ years in GHL</li>
+          </ul>
+        </div>
+
+        <!-- Decorative "workflow builder" illustration. Hidden from screen readers
+             because the copy beside it already says the same thing in words. -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="wf-card">
+            <div class="wf-head">
+              <span class="wf-dots"><i></i><i></i><i></i></span>
+              <span class="mono">workflow / new-lead-ai-qualify</span>
+              <span class="wf-status">Published</span>
+            </div>
+            <ol class="wf">
+              <li class="wf-node wf-trigger"><span class="wf-tag">Trigger</span>Form submitted</li>
+              <li class="wf-line"><span class="wf-pulse"></span></li>
+              <li class="wf-node wf-ai"><span class="wf-tag">AI Agent</span>Qualify lead in chat</li>
+              <li class="wf-line"><span class="wf-pulse"></span></li>
+              <li class="wf-node"><span class="wf-tag">If / Else</span>Qualified?</li>
+              <li class="wf-split">
+                <div class="wf-node wf-yes"><span class="wf-tag">Yes</span>Book quote call</div>
+                <div class="wf-node wf-no"><span class="wf-tag">No</span>Nurture sequence</div>
+              </li>
+            </ol>
+          </div>
+          <div class="float-chip chip-a">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+            Voice AI answered the call
+          </div>
+          <div class="float-chip chip-b">
+            <svg class="icon" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>
+            Moved to “Booked” stage
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 2. ABOUT ======================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+
+        <!-- Profile photo: to change it, replace images/kamil.jpg (square works best) -->
+        <div class="about-photo-wrap reveal">
+          <img class="about-photo" src="images/kamil.jpg" alt="Portrait of Muhammad Kamil" width="800" height="800" loading="lazy" decoding="async">
+          <div class="about-floating-card">
+            <span class="mono">based in</span>
+            <strong>Islamabad, Pakistan</strong>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="section-kicker reveal">About me</p>
+          <h2 id="about-title" class="section-title reveal">The person agencies call when a GHL account gets messy.</h2>
+
+          <!-- Real bio, taken from the Upwork overview -->
+          <p class="reveal">
+            Most GoHighLevel accounts I get handed have the same problems: workflows overlapping,
+            leads slipping through, and nobody remembers how anything was set up. That's usually
+            where I come in.
+          </p>
+          <p class="reveal">
+            I've been working in GoHighLevel for 4+ years, mostly doing hands-on fulfillment for
+            agencies. At one point I was handling 12+ client accounts at the same time, across real
+            estate, cleaning services, coaching and orthodontics. Alongside GHL I work with
+            ClickFunnels, Kajabi and WordPress, and connect systems with Zapier, Make, Pabbly and APIs.
+          </p>
+          <p class="reveal">
+            <strong>How I work:</strong> I ask what the business actually needs before I build anything.
+            I test with test contacts before anything goes live, I name things so your team can find
+            them later, and I send a short Loom when something needs explaining.
+          </p>
+
+          <ul class="fact-list reveal" data-stagger>
+            <li><span class="mono">industries</span>Real estate, cleaning services, coaching, orthodontics</li>
+            <li><span class="mono">clients</span>GHL agencies, SaaS agencies on HighLevel, business owners</li>
+            <li><span class="mono">availability</span>Less than 30 hrs/week · open to contract-to-hire</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 3. SKILLS & TOOLS ======================= -->
+    <section class="section section-tinted" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">Skills &amp; tools</p>
+          <h2 id="skills-title" class="section-title reveal">The stack I build with every day.</h2>
+        </header>
+
+        <!-- AI specialty gets its own highlighted spotlight card -->
+        <article class="ai-spotlight reveal" aria-labelledby="ai-title">
+          <div class="ai-spotlight-copy">
+            <p class="ai-badge"><span class="pulse-dot pulse-light" aria-hidden="true"></span>Signature specialty</p>
+            <h3 id="ai-title">AI agents built inside GoHighLevel</h3>
+            <p>
+              Most GHL freelancers stop at workflows. I build conversational AI and voice AI agents
+              that live inside your account, answer leads instantly, ask the right qualifying
+              questions, and book calls straight onto your calendar.
+            </p>
+          </div>
+          <ul class="ai-tags" aria-label="AI skills">
+            <li>Conversation AI chatbots</li>
+            <li>Voice AI agents</li>
+            <li>GHL AI Agents</li>
+            <li>Lead qualification</li>
+            <li>Automated booking</li>
+            <li>Zapier &amp; Make chatbots</li>
+          </ul>
+        </article>
+
+        <div class="skills-grid" data-stagger>
+          <article class="skill-group reveal">
+            <h3>Core platforms</h3>
+            <ul class="tag-list">
+              <li class="tag tag-strong">GoHighLevel (Expert)</li>
+              <li class="tag">ClickFunnels</li>
+              <li class="tag">Kajabi</li>
+            </ul>
+            <p class="skill-note">4+ years across GHL and similar CRM and funnel platforms.</p>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Automation &amp; CRM</h3>
+            <ul class="tag-list">
+              <li class="tag">Workflow automation</li>
+              <li class="tag">Pipeline automation</li>
+              <li class="tag">Custom fields &amp; values</li>
+              <li class="tag">Calendars &amp; forms</li>
+              <li class="tag">SaaS Mode &amp; snapshots</li>
+              <li class="tag">Email &amp; SMS</li>
+              <li class="tag">Reputation management</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Integrations</h3>
+            <ul class="tag-list">
+              <li class="tag">Zapier</li>
+              <li class="tag">Make</li>
+              <li class="tag">Pabbly</li>
+              <li class="tag">Webhooks</li>
+              <li class="tag">API integrations</li>
+              <li class="tag">Domains, DNS &amp; SSL</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Project systems</h3>
+            <ul class="tag-list">
+              <li class="tag tag-strong">ClickUp workflow &amp; automation setup</li>
+              <li class="tag">Asana</li>
+              <li class="tag">Monday.com</li>
+              <li class="tag">Trello</li>
+              <li class="tag">Flowlu</li>
+              <li class="tag">Slack</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Web <span class="secondary-pill">Secondary</span></h3>
+            <ul class="tag-list">
+              <li class="tag">WordPress</li>
+              <li class="tag">Funnels &amp; websites</li>
+              <li class="tag">Memberships &amp; communities</li>
+            </ul>
+            <!-- WordPress proficiency meter (70%, as stated) -->
+            <div class="meter">
+              <div class="meter-label"><span>WordPress</span><span>~70%</span></div>
+              <div class="meter-track" role="meter" aria-label="WordPress proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+                <span class="meter-fill" style="--value: 70%"></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 4. SERVICES ======================= -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">Services</p>
+          <h2 id="services-title" class="section-title reveal">What I can set up, fix, or take off your plate.</h2>
+          <p class="section-lead reveal">Open to one-off builds, fixes, audits, or ongoing hourly work.</p>
+        </header>
+
+        <div class="services-grid" data-stagger>
+          <!-- Featured service: AI agents (full width) -->
+          <article class="service-card service-featured reveal">
+            <div class="service-icon service-icon-light">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"/></svg>
+            </div>
+            <div>
+              <h3>AI Agent Integration</h3>
+              <p>
+                Conversation AI, Voice AI and AI Agents inside GoHighLevel, plus chatbots connected
+                through Zapier and Make. Your leads get answered in seconds, qualified with the right
+                questions, and booked without anyone touching the inbox.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+            </div>
+            <h3>GoHighLevel Setup &amp; CRM Build</h3>
+            <p>Pipelines, custom fields and values, tags, calendars, forms, surveys, contact management, plus email, SMS, review requests and reporting.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v4a3 3 0 0 0 3 3h6"/></svg>
+            </div>
+            <h3>Workflow Automation</h3>
+            <p>Lead routing, nurture, reactivation, reminders and no-show follow-ups, built clean so workflows don't overlap or fight each other.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>
+            </div>
+            <h3>CRM &amp; Platform Migrations</h3>
+            <p>Moving into GoHighLevel from other CRMs, ClickFunnels, Kajabi, HubSpot, Salesforce and others, without losing data or momentum.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="m2 16 10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>SaaS Mode &amp; Snapshots</h3>
+            <p>SaaS Mode, master snapshots, sub-account onboarding, user permissions and Affiliate Manager for agencies running HighLevel under their own brand.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg>
+            </div>
+            <h3>Funnels, Websites &amp; Memberships</h3>
+            <p>Sales funnels, websites, memberships and communities in GoHighLevel, ClickFunnels, Kajabi or WordPress.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0V8zM12 18v4"/></svg>
+            </div>
+            <h3>Integrations &amp; Project Systems</h3>
+            <p>Zapier, Make, webhooks and API connections, domains, DNS and SSL, plus ClickUp workflow and automation setup so your team stays organized.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 5. FEATURED PROJECT ======================= -->
+    <section class="section section-tinted" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">Featured case study</p>
+          <h2 id="featured-title" class="section-title reveal">End-to-end recruitment automation in GoHighLevel</h2>
+          <p class="section-lead reveal">Staffing &amp; hiring · client kept confidential</p>
+        </header>
+
+        <div class="case-grid">
+          <div class="case-copy">
+            <div class="case-block reveal">
+              <h3>The challenge</h3>
+              <p>
+                A hiring process runs on sessions: group interviews, orientation, then training.
+                Tracking who showed up, who completed their forms, and who should move on, by hand,
+                across every stage and every recurring session, is slow and easy to get wrong.
+              </p>
+            </div>
+
+            <div class="case-block reveal">
+              <h3>What I built</h3>
+              <p>
+                A complete candidate journey inside GoHighLevel, modelled like an applicant tracking
+                system. Candidates move through an ATS-style group interview stage, an orientation
+                stage, and a two-part recurring training program, and the system decides on its own
+                who advances and who drops out.
+              </p>
+            </div>
+
+            <ul class="case-highlights" data-stagger>
+              <li class="reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>
+                <span><strong>Custom contact fields</strong> track attendance and form completion at every stage.</span>
+              </li>
+              <li class="reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>
+                <span><strong>Automatic stage moves:</strong> candidates advance when they complete the required steps, or move to Disqualified when they don't.</span>
+              </li>
+              <li class="reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <span><strong>Scheduled status checks</strong> run a few hours after each session, so decisions happen on time without anyone remembering to check.</span>
+              </li>
+              <li class="reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg>
+                <span><strong>Recurring two-part training</strong> handled end to end, session after session.</span>
+              </li>
+            </ul>
+
+            <ul class="tag-list case-tags reveal" aria-label="Tools used">
+              <li class="tag">GHL pipelines</li>
+              <li class="tag">Workflows</li>
+              <li class="tag">Custom contact fields</li>
+              <li class="tag">Forms</li>
+              <li class="tag">Scheduled automations</li>
+            </ul>
+          </div>
+
+          <!-- Visual pipeline of the candidate journey -->
+          <figure class="pipeline reveal" aria-labelledby="pipeline-caption">
+            <figcaption id="pipeline-caption" class="pipeline-head">
+              <span class="mono">pipeline / candidate-journey</span>
+            </figcaption>
+            <ol class="stages">
+              <li class="stage">
+                <span class="stage-num">01</span>
+                <div class="stage-body">
+                  <strong>Group interview</strong>
+                  <span>ATS-style stage · attendance + form tracked</span>
+                </div>
+              </li>
+              <li class="stage-check"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Status check a few hours after session</li>
+              <li class="stage">
+                <span class="stage-num">02</span>
+                <div class="stage-body">
+                  <strong>Orientation</strong>
+                  <span>attendance + form tracked</span>
+                </div>
+              </li>
+              <li class="stage-check"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Status check a few hours after session</li>
+              <li class="stage">
+                <span class="stage-num">03</span>
+                <div class="stage-body">
+                  <strong>Training, part 1</strong>
+                  <span>recurring session</span>
+                </div>
+              </li>
+              <li class="stage">
+                <span class="stage-num">04</span>
+                <div class="stage-body">
+                  <strong>Training, part 2</strong>
+                  <span>recurring session</span>
+                </div>
+              </li>
+              <li class="stage stage-done">
+                <span class="stage-num">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>
+                </span>
+                <div class="stage-body">
+                  <strong>Completed</strong>
+                  <span>all required steps done</span>
+                </div>
+              </li>
+            </ol>
+            <div class="stage-dq">
+              <span class="dq-x" aria-hidden="true">✕</span>
+              <div>
+                <strong>Disqualified</strong>
+                <span>any missed attendance or form, at any stage, routes here automatically</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 6. MORE PROJECTS ======================= -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">More projects</p>
+          <h2 id="work-title" class="section-title reveal">A few other recent builds.</h2>
+        </header>
+
+        <div class="projects-grid" data-stagger>
+          <!-- Real project (from Upwork overview). Image area is a PLACEHOLDER. -->
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-blue" role="img" aria-label="Screenshot placeholder for the orthodontics snapshot project">
+              <span class="thumb-big">180+</span>
+              <span class="thumb-small">sub-accounts</span>
+            </div>
+            <div class="project-body">
+              <h3>Master snapshot for an orthodontics business</h3>
+              <p>Built a master GoHighLevel snapshot that's now running in 180+ sub-accounts.</p>
+              <ul class="tag-list"><li class="tag">Snapshots</li><li class="tag">SaaS Mode</li><li class="tag">Sub-accounts</li></ul>
+            </div>
+          </article>
+
+          <!-- Real project (from Upwork overview). Image area is a PLACEHOLDER. -->
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-teal" role="img" aria-label="Screenshot placeholder for the Kajabi to GoHighLevel migration project">
+              <span class="thumb-big">30+</span>
+              <span class="thumb-small">courses migrated</span>
+            </div>
+            <div class="project-body">
+              <h3>Kajabi to GoHighLevel course migration</h3>
+              <p>Moved 30+ courses from Kajabi into GoHighLevel for a coaching client.</p>
+              <ul class="tag-list"><li class="tag">Migration</li><li class="tag">Memberships</li><li class="tag">Kajabi</li></ul>
+            </div>
+          </article>
+
+          <!-- Real project (from Upwork overview). Image area is a PLACEHOLDER. -->
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-indigo" role="img" aria-label="Screenshot placeholder for the cleaning company AI agent project">
+              <svg class="icon thumb-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"/></svg>
+              <span class="thumb-small">AI agent</span>
+            </div>
+            <div class="project-body">
+              <h3>AI lead-qualifying agent for a cleaning company</h3>
+              <p>Built an AI agent that qualifies leads and books quote calls. The owner liked it enough to roll it out to his other three businesses.</p>
+              <ul class="tag-list"><li class="tag">AI Agent</li><li class="tag">Lead qualification</li><li class="tag">Booking</li></ul>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER project card: duplicate this <article> to add more projects -->
+          <article class="project-card project-placeholder reveal">
+            <div class="project-thumb thumb-placeholder" role="img" aria-label="Project image placeholder">
+              <span class="placeholder-label">Image placeholder</span>
+            </div>
+            <div class="project-body">
+              <span class="placeholder-chip">Placeholder</span>
+              <h3>Project Title Placeholder</h3>
+              <p>Short placeholder description: what the client needed, what you built, and the result. Replace with a real project.</p>
+              <ul class="tag-list"><li class="tag">Tag one</li><li class="tag">Tag two</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 7. STATS / CREDIBILITY STRIP ======================= -->
+    <!-- Numbers taken from the Upwork profile. Update them as they grow.
+         data-count = number to count up to; data-prefix / data-suffix wrap it. -->
+    <section class="stats" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title" class="visually-hidden">Track record</h2>
+        <ul class="stats-grid" data-stagger>
+          <li class="stat reveal">
+            <span class="stat-num" data-count="100" data-suffix="%">100%</span>
+            <span class="stat-label">Job Success on Upwork</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num stat-text">Rising Talent</span>
+            <span class="stat-label">Upwork badge</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num" data-count="3" data-prefix="$" data-suffix="K+">$3K+</span>
+            <span class="stat-label">Earned on Upwork</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num" data-count="181">181</span>
+            <span class="stat-label">Hours logged on Upwork</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num" data-count="4" data-suffix="+">4+</span>
+            <span class="stat-label">Years in GoHighLevel</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num" data-count="180" data-suffix="+">180+</span>
+            <span class="stat-label">Sub-accounts running my snapshot</span>
+          </li>
+        </ul>
+        <p class="stats-note">Upwork figures as shown on my profile, October 2026.</p>
+      </div>
+    </section>
+
+    <!-- ======================= 8. CONTACT ======================= -->
+    <!-- No contact form on purpose: GitHub Pages has no backend, and direct
+         email/WhatsApp links work instantly with nothing to configure. -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-intro">
+            <p class="section-kicker kicker-light">Contact</p>
+            <h2 id="contact-title">Let's build something that runs itself.</h2>
+            <p>
+              Send me a message with what you're trying to set up or fix, and I'll tell you
+              honestly how I'd approach it.
+            </p>
+            <div class="contact-profiles">
+              <a class="btn btn-light" href="https://www.upwork.com/freelancers/~0155f028ab050685e6" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+                Hire me on Upwork<span class="visually-hidden"> (opens in a new tab)</span>
+              </a>
+              <a class="btn btn-outline-light" href="https://www.linkedin.com/in/kamil045/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+                Connect on LinkedIn<span class="visually-hidden"> (opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <span class="contact-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <div class="contact-text">
+                <span class="contact-label">Primary email</span>
+                <a href="mailto:Kamil.tech24@gmail.com">Kamil.tech24@gmail.com</a>
+              </div>
+              <button class="copy-btn" type="button" data-copy="Kamil.tech24@gmail.com" aria-label="Copy primary email address">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              </button>
+            </li>
+            <li class="contact-item">
+              <span class="contact-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <div class="contact-text">
+                <span class="contact-label">Secondary email</span>
+                <a href="mailto:kamiluuu52@gmail.com">kamiluuu52@gmail.com</a>
+              </div>
+              <button class="copy-btn" type="button" data-copy="kamiluuu52@gmail.com" aria-label="Copy secondary email address">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              </button>
+            </li>
+            <li class="contact-item">
+              <span class="contact-icon contact-icon-wa">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg>
+              </span>
+              <div class="contact-text">
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/923169979508" target="_blank" rel="noopener noreferrer">+92 316 9979508<span class="visually-hidden"> (opens WhatsApp in a new tab)</span></a>
+              </div>
+              <a class="chat-btn" href="https://wa.me/923169979508" target="_blank" rel="noopener noreferrer">Chat<span class="visually-hidden"> on WhatsApp</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Screen-reader announcement for the copy buttons -->
+        <p class="visually-hidden" id="copy-status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= 9. FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">MK</span>
+          <span class="brand-name">Muhammad Kamil</span>
+        </a>
+        <p class="muted">GoHighLevel Expert · CRM, Workflows, AI Agents &amp; Integrations</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="mailto:Kamil.tech24@gmail.com">Email</a></li>
+          <li><a href="https://wa.me/923169979508" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://www.upwork.com/freelancers/~0155f028ab050685e6" target="_blank" rel="noopener noreferrer">Upwork</a></li>
+          <li><a href="https://www.linkedin.com/in/kamil045/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <p class="copyright muted">© <span id="year">2026</span> Muhammad Kamil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast shown after copying an email -->
+  <div class="toast" id="toast" aria-hidden="true">Copied to clipboard</div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
